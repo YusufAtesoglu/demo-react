@@ -28,9 +28,9 @@ const Header = ({ setSelectedCategory }) => {
                 <Link className="nav-link" to="/favs">Favoriler</Link>
               </li>
               <li className="nav-item">
-              <nav>
+              
       <Link to="/" onClick={() => filterProduct("men's clothing")}>Erkek Kıyafetleri</Link>
-    </nav>
+    
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Sepet</a>
