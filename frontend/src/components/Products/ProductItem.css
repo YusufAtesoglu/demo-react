@@ -1,0 +1,67 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1rem;
+  height: 500px; /* Sabit bir yükseklik belirleyin */
+  box-shadow: 0 6px 12px rgba(111, 10, 131, 0.2); /* Hover sırasında gölgeyi artırır */
+}
+
+.card-body {
+  flex-grow: 10;
+  /* background-color: rgb(182, 239, 230); */
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Başlığı iki satırda kes */
+  -webkit-box-orient: vertical;
+  
+}
+.card:hover {
+  
+ 
+transform: translateY(-5px); /* Hover sırasında kartı biraz yukarı kaldırır */
+  
+
+box-shadow: 0 6px 12px rgba(201, 50, 50, 0.2); /* Hover sırasında gölgeyi artırır */
+}
+
+.card-price{
+  font-style:oblique;
+}
+.card-text {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Uzun metinleri keser */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Metni üç satırda keser */
+  -webkit-box-orient: vertical;
+}
+.card-img-top {
+  height: 200px; /* Sabit bir yükseklik belirleyin */
+  object-fit:contain; /* Görüntünün kesilerek sığmasını sağlar */
+  width: 100%; /* Kart genişliğine göre ayarla */
+
+  
+}
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red; /* Kalp ikonunun rengini ayarlayın */
+  font-size: 1.5rem; /* İkonun boyutunu ayarlayın */
+  cursor: pointer; /* İkonun üzerine gelindiğinde fare işaretçisini değiştir */
+}
+
+.heart-icon:hover {
+  color: darkred; /* İkonun üzerine gelindiğinde rengini değiştir */
+}
+

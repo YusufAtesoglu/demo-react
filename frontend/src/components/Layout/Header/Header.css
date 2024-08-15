@@ -1,0 +1,55 @@
+/*! header start  */
+
+
+  /* Navbar stil ayarları */
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #333;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;base64,...'); /* Toggle buton simgesi için base64 kodu */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-nav .nav-link i {
+  font-size: 1.25rem; /* İkon boyutu */
+}
+
+/* Responsive ayarlar */
+@media (max-width: 2000px) {
+  .navbar-nav {
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem;
+  }
+}
+
+  

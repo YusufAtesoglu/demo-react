@@ -1,0 +1,73 @@
+/* Favs.css */
+
+/* Genel konteynır için stil */
+.container {
+    padding: 1rem; /* Konteynır etrafına boşluk ekler */
+}
+
+/* Kartların yan yana ve düzgün hizalanmasını sağlar */
+.product-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Kartların satıra sığmaması durumunda bir sonraki satıra geçmesini sağlar */
+    gap: 1rem; /* Kartlar arasındaki boşluk */
+    justify-content: center; /* Kartları yatayda ortalar */
+}
+
+/* Her bir kart için stil */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 18rem; /* Kart genişliği */
+    height: 500px; /* Sabit bir yükseklik belirleyin */
+    position: relative; /* Heart icon'un konumunu ayarlamak için gerekli */
+}
+
+/* Kart içeriği için stil */
+.card-body {
+    flex-grow: 1;
+}
+
+/* Kart başlığı için stil */
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Başlığı iki satırda kes */
+    -webkit-box-orient: vertical;
+}
+
+/* Kart metni için stil */
+.card-text {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Uzun metinleri keser */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Metni iki satırda keser */
+    -webkit-box-orient: vertical;
+}
+
+/* Kart görseli için stil */
+.card-img-top {
+    height: 200px; /* Sabit bir yükseklik belirleyin */
+    object-fit: contain; /* Görüntünün kesilerek sığmasını sağlar */
+    width: 100%; /* Kart genişliğine göre ayarla */
+}
+
+/* Kalp ikonu için stil */
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red; /* Kalp ikonunun rengini ayarlayın */
+    font-size: 1.5rem; /* İkonun boyutunu ayarlayın */
+    cursor: pointer; /* İkonun üzerine gelindiğinde fare işaretçisini değiştir */
+}
+
+/* Kalp ikonu hover stili */
+.heart-icon:hover {
+    color: darkred; /* İkonun üzerine gelindiğinde rengini değiştir */
+}

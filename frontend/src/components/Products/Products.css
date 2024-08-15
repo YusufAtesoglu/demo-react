@@ -1,0 +1,22 @@
+.products {
+    margin-bottom: 40px;
+  }
+  
+  .products .product-list {
+     display: flex;
+    gap: 20px;
+  
+  }
+  .product-wrapper {
+    display: flex;
+    flex-wrap:wrap; /* Tüm öğeleri tek satırda tut */
+    overflow-x: auto; /* İçeriği yatay olarak kaydırılabilir yap */
+    gap: 20px; /* Öğeler arasında boşluk bırak */
+    
+  }
+  
+  .product-item {
+    flex: 0 0 auto; /* Öğelerin boyutunu sabit tut */
+    width: 200px; /* Ürün kartının genişliğini belirle */
+  }
+  
