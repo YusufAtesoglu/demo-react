@@ -26,8 +26,8 @@ const Header = ({ setSelectedCategory, cartCount }) => {
                 <Link className="nav-link" to="/favs">Favoriler</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/cart"}>Sepet</Link>
-                <Link className="nav-link" to={"/cart"}></Link>
+                {/* <Link className="nav-link" to={"/cart"}>Sepet</Link> */}
+                <Link className="nav-link" to={"/cart"}><i className="bi bi-cart4"></i></Link>
               </li>
             </ul>
           </div>
