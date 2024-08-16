@@ -9,7 +9,6 @@ const Info = ({singleProduct}) => {
   return ( <> 
   <Header/>
     <div className="product-info">
-             
 <div className="container text-center">
   <div className="row">
     <div className="col">

@@ -1,0 +1,92 @@
+.cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .cart-icon {
+    margin-right: 10px;
+    color: #ff6f61; /* İkon rengi */
+  }
+  
+  .cart-table-container {
+    padding: 20px;
+    overflow-x: auto;
+  }
+  
+  .cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .cart-table th {
+    background-color: #f8f8f8;
+  }
+  
+  .product-image {
+    max-width: 80px;
+    height: auto;
+  }
+  
+  .btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cart-header h2 {
+      font-size: 20px;
+    }
+    
+    .cart-table th,
+    .cart-table td {
+      font-size: 14px;
+    }
+  
+    .product-image {
+      max-width: 60px;
+    }
+  
+    .btn-danger {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }
+  /* .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  
+  .cart-icon-wrapper {
+    position: relative;
+    font-size: 24px;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+  } */
+  
+  

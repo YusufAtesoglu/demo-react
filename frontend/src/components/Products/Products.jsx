@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
 import "./Products.css";
 
+
 const Products = ({ selectedCategory }) => {
   const [products, setProducts] = useState([]);
 
@@ -28,6 +29,7 @@ const Products = ({ selectedCategory }) => {
 
   return (
     <div>
+    
       <section className="products pt-3">
         <div className="container">
           <div className="section-title">

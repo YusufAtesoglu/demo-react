@@ -22,7 +22,7 @@ const ProductDetailsPage = () => {
     fetchSingleProduct();
   }, [productId]);
 
-  console.log(singleProduct);
+ 
   return singleProduct ? (
     <ProductDetails singleProduct={singleProduct} setSingleProduct={setSingleProduct} />
   ) : (
